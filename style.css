@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #fea26d;
+  --hover-color: #c86fff;
+  --blue-color: #4255a4;
+}
+/* Reuse */
+
+.text-main {
+  color: #fea26d;
+}
+.text-sec {
+  color: var(--hover-color);
+}
+
+.btn-primary {
+  padding: 20px 40px;
+  background-color: #fea26d;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+}
+.btn-sec {
+  padding: 20px 40px;
+  background-color: var(--hover-color);
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background: var(--hover-color);
+  text-decoration: none;
+  transition: 1s;
+}
+
+.btn-sec:hover {
+  background: var(--main-color);
+  text-decoration: none;
+  transition: 1s;
+}
+.btn-dark {
+  padding: 20px 40px;
+  background-color: #333;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+}
+
+.btn-dark:hover {
+  background: var(--main-color);
+  text-decoration: none;
+  transition: 1s;
+}
+/*  */
+body {
+  /* font-family: "Josefin Sans", sans-serif;   for Heading*/
+  font-family: "Mulish", sans-serif; /*for Content*/
+  /* background: linear-gradient(to right, #314755, #26a0da); */
+  line-height: 1.5;
+}
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+}
+p {
+  font-family: "Mulish", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+section {
+  margin-top: 1.5rem;
+}
+/* Header & Navbar */
+
+.main-header {
+  background: linear-gradient(to right, #606eee, #ec67ff);
+  height: 100vh;
+}
+
+.logo {
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+#nav-bar {
+  display: flex;
+  height: 5rem;
+  /* position: fixed; */
+}
+#nav-bar ul {
+  display: flex;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+}
+
+#nav-bar li {
+  padding: 1rem 1.5rem 1rem;
+}
+#nav-bar li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+/* Header Content */
+.hero {
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  margin: 7rem auto 2rem;
+}
+
+.img-div .header-img {
+  max-width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+.btn-hero {
+  margin: auto;
+}
+
+/* Solve Sections */
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  margin: 6.5rem 0 0 4rem;
+}
+
+.solve-img {
+  width: 630px;
+  height: 450px;
+  /* margin-left: 8rem; */
+}
+
+.inside-content {
+  margin: 1rem auto 1rem;
+}
+.last {
+  margin-bottom: 3rem;
+}
+
+/* How it Works */
+.working-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.video-head {
+  text-align: center;
+}
+.img-vid {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+
+.live-img {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 3rem;
+}
+.live-btn {
+  margin-top: 3rem;
+}
+
+/* Prepar */
+.prepar-head {
+  margin: 6rem auto 2rem;
+  text-align: center;
+}
+.flex-prepar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pre-p {
+  max-width: 600px;
+}
+
+.pre-btn {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Subjects */
+.sub-head {
+  margin: 3rem auto;
+  text-align: center;
+}
+.state-head {
+  margin: 3rem auto 0;
+  text-align: center;
+}
+.sub-p {
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+.sub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1.5rem;
+  text-align: center;
+}
+
+.sub-btn {
+  padding: 25px 30px;
+}
+
+/* Experts */
+
+.exp-head {
+  margin: 3rem auto;
+  text-align: center;
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1rem;
+  margin: auto;
+}
+.img-exp {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* Student */
+.fee-img {
+  width: 600px;
+  height: 600px;
+}
+.stu-p {
+  margin-bottom: 3rem;
+}
+
+/* Footer */
+.footer {
+  background: var(--blue-color);
+  color: #fff;
+  height: 15rem;
+}
+
+.footer-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.footer-h1 {
+  margin-top: 2rem;
+}
+.social a {
+  color: #fff;
+  padding: 0 20px;
+  margin-top: 4rem;
+}
+.social a:hover {
+  color: #fea26d;
+}
+.footer-p {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Mobile Css */
+
+@media (max-width: 579px) {
+  .img-div .header-img {
+    display: none;
+  }
+  #nav-bar {
+    display: flex;
+    height: 5rem;
+    position: fixed;
+  }
+  #nav-bar ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+}
+
+/*  */
